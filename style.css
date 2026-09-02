@@ -666,6 +666,33 @@ em {
     margin-bottom: 70px;
 }
 
+.slider-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.catalogue-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    padding: 14px 18px;
+    border: 1px solid var(--black);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: background .3s ease, color .3s ease;
+}
+
+.catalogue-btn span {
+    font-size: 16px;
+}
+
+.catalogue-btn:hover {
+    background: var(--black);
+    color: white;
+}
+
 .slider-controls {
     display: flex;
 
@@ -1752,6 +1779,15 @@ footer {
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
+
+    .slider-actions {
+        gap: 14px;
+    }
+
+    .catalogue-btn {
+        padding: 12px 14px;
+    }
+
 
     .nav-links,
     .nav-call {
